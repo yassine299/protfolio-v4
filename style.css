@@ -1,0 +1,290 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #FFFAFA;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav > ul > li{
+    list-style: none;
+    display: inline-block;
+    margin-right:30px;
+    }
+nav > ul > li > a{
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+}
+nav > ul > li > a:hover{
+    color: rgb(53, 121, 223);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -70px 0;
+    min-height: 100vh;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+    
+}
+
+.col-1 h2{
+    font-size: 44px;
+    color: #5271FF;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: darkgrey;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 18px;
+    color :#5975ff;
+    font-weight: 100;
+    margin: 30px 0;
+}
+
+
+
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: blanchedalmond;
+    background: linear-gradient(to right ,#5271FF,#083152);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button img{
+    width: 30px;
+    display: none;
+}
+button:hover img{
+    display: block;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-2{
+    position: relative;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.row-2{
+    align-items: center;
+   margin-top: 140px;
+}
+.col-3{
+position: relative;
+bottom: 100px;
+justify-content: space-around;
+text-align: center;
+}
+.col-3 ul li{
+    list-style: none;
+    margin-bottom: 50px;
+}
+.col-3 p{
+margin-bottom: 60px;
+font-family: cursive;
+}
+.col-3 h1{
+    margin-bottom: 80px;
+    font-size: 45px;
+    font-family: monospace;
+}
+.row-3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    
+}
+.col-4 , .col-5{
+    display: grid;
+}
+.princ h1{
+    font-size: 45px;
+    font-family: monospace;
+}
+.linkopen{
+    color: rgb(53, 121, 223);
+    text-decoration: none;
+    font-size: 30px;
+    border-bottom: rgb(4, 44, 104) solid 5px;
+    transition: 0.5s;
+}
+.linkopen:hover{
+    font-size: 40px;
+}
+.pic{
+    transition: 0.5s;
+    filter: blur(1px);
+    cursor: pointer;
+}
+.pic:hover{
+    width: 560px;
+    height: 350px;
+    filter: blur(0px);
+}
+.princ{
+    text-align: center;
+
+}
+.social-media{
+    text-align: center;
+    cursor: pointer;
+    margin-top:0px;
+}
+.col-1 a{
+    text-decoration: none;
+}
+
+.navbar img{
+    display: none;
+}
+
+.logo{
+    font-family: serif;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:700px) {
+    nav ul{
+        background: linear-gradient(to right ,#5271FF,#0e4674);
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }   
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: cornsilk;
+    }
+    .navbar img{
+        display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .row{
+        flex-direction: column-reverse;
+        margin: 0px 0;
+    }
+
+    .col-2 img{
+        width: 230px;
+    }
+    .col-1 h2{
+        font-size: 25px;
+        margin-top: -400px;
+    }
+    
+    .col-1 h3{
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    .col-3 {
+        margin-top: -140px;
+    }
+    .col-3 p{
+        margin-top: -70px;
+    }
+   
+    .row-3{
+        display: block;
+    }
+    .princ{
+        margin-top: -40px;
+    }
+    .col-4,.col-5{
+        justify-content: space-around;
+    }
+    .col-5 img{
+     width: 300px;
+     height: 200px;
+    }
+    .col-4 img{
+     width: 300px;
+     height: 200px;
+    }
+    .social-media{
+    margin-top: 10px;
+    }
+    .pic{
+        filter: blur(0px);
+    }
+    .pic:hover{
+    width: 350px;
+    height: 250px;  
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
